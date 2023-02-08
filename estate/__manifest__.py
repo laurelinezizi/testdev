@@ -12,5 +12,6 @@
     ],
     'data': [
         'views/realestate.xml',
+    ]
 }
 
