@@ -12,6 +12,7 @@
     ],
     'data': [
         'views/realestate.xml',
+        'security/ir.model.access.csv',
     ]
 }
 
