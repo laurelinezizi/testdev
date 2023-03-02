@@ -7,7 +7,7 @@ class RealEstate(models.Model):
     name = fields.Char(required=True, index=True)
     description = fields.Text()
     postcode = fields.Char()
-    date_availability = fields.Date(copy=False)
+    date_availability = fields.Date(copy=False, "Date Availability", default=lambda self:today(relativedelta(months=3))
     expected_price = fields.Float(required=True)
     selling_price = fields.Float(readonly=True, copy=False)
     bedrooms = fields.Integer(default=2)
@@ -20,3 +20,4 @@ class RealEstate(models.Model):
         selection=[('North', 'North'), ('South', 'South'), ('West', 'West'), ('East', 'East')],
         help="Type is used to the orientation of the garden")
 
+ 
