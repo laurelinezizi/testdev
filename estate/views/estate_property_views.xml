@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<odoo>
+
+<!-- Création de ma première action -->
+
+    <record id="real_estate_model_action" model="ir.actions.act_window">
+        <field name="name">Nom</field>
+        <field name="res_model">real.estate</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
